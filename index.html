@@ -1,0 +1,368 @@
+<!DOCTYPE html>
+<html lang="en">
+
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>motherfucking website</title>
+    <style>
+    .typed {
+      line-height: 35px;
+      width: 80%;
+      font-size: 100%;
+      text-align: left;
+      font-family: "Courier New", "Lucida Console", monospace;
+      vertical-align: text-bottom;
+  }
+  
+  .typed::after{
+      content: "|";
+      font-size: 100%;
+      line-height: 30px;
+      animation: blink .75s step-end infinite;
+  }
+  
+  @keyframes blink {
+      from, to { color: transparent }
+      50% { color: rgba(245, 245, 245) }
+  }
+    :root {
+      --size: 20;
+      --speed: 2;
+      --line: #920563;
+      --hole: #fff;
+      --pos: 0%;
+      --bg: repeating-radial-gradient(circle at 100% 100%, #fff0 0, var(--line) 1px 2%, #fff0 calc(2% + 1px) 4%);
+    }
+    @font-face {
+      font-family: tipe;
+      src: url(fonts/typewcond_regular.otf);
+    }
+    .licence{
+      font-family: tipe;
+    }
+
+    body {
+      background-color: #f2f2f2;
+      color: #454545;
+	
+	background: var(--hole);
+     
+      color: #454545;
+      font-size: 18px;
+      margin: 2em auto;
+      max-width: 800px;
+      padding: 1em;
+      line-height: 1.6;
+      text-align: justify;
+    }
+
+    a {
+      color: rgb(247, 22, 172);
+      text-decoration: none;
+    }
+
+  
+
+    #containner {
+      max-width: 850px;
+      margin: auto;
+    }
+
+    .first_typeWriter {
+      height: 10px;
+      margin-top: 50px;
+      margin-bottom: 50px;
+
+      background-color: red;
+    }
+
+    .heading {
+      font-family: punk;
+    }
+
+    .text {
+      padding-left: 20px;
+      
+
+    }
+
+
+
+
+    .scheme ul li {
+      display: inline-block;
+      font-size: 13px;
+      height: 100px;
+      padding: 0;
+      position: relative;
+      width: 50px;
+    
+      list-style: none;
+      color: white;
+      font-size: 50px;
+      text-align: center;
+      
+    }
+    .cubeContainer{
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      margin-top: 100px;
+      padding: 100px;
+    }
+.cube {
+	width: calc(var(--size) * 1vmin);
+	height: calc(var(--size) * 1vmin);
+	background: var(--bg), var(--hole);
+	background-size: 250% 250%;
+	background-position: var(--pos) var(--pos);
+	background-repeat: no-repeat;
+	transform: rotateX(45deg) rotateZ(45deg) translateZ(calc(calc(var(--size) * 1vmin) / 2));
+	transform-style: preserve-3d;
+	animation: move calc(var(--speed) * 1s) linear 0s infinite;
+}
+
+.cube:before, .cube:after {
+	content: "";
+	background: var(--bg), var(--hole);
+	background-size: 250% 250%;
+	background-position: var(--pos) var(--pos);
+	background-repeat: no-repeat;
+	position: absolute;
+	width: 100%;
+	height: 100%;
+	transform: rotate(180deg) rotateY(-90deg) rotateX(180deg);
+	transform-origin: right bottom;
+	animation: move calc(var(--speed) * 1s) linear 0s infinite;
+} 
+
+.cube:after {
+	transform: rotateY(-90deg) rotateX(-90deg);
+}
+
+@keyframes move {
+	100% { background-position: 6.75% 6.75%; }
+}
+.firstLine{
+  display: flex;
+  justify-content: space-between;
+}
+.button{
+  width: 30px;
+  height: 30px;
+  background-color: rgb(13 17 23);
+}
+
+  </style>
+  </head>
+
+  <body>
+    <div id="mainBox">
+      <div id="containner">
+        <!-- tipewriter and button place  -->
+        <div class="firstLine">
+          <div></div>
+          <div class="button" id="buttonRed"></div>
+        </div>
+
+        <div class="text">
+          <!-- first heading  -->
+          <div class="first">
+            <h1 class="heading">simple <i>motherfucking</i> website.</h1>
+            <p id="colorfulRainbow">and its fucking perfect</p>
+            <ul>
+
+
+              <li>Finally fits on all your shitty screens;</li>
+              <li>Finally looks the same in all your shitty browsers;</li>
+              <li>
+                Won’t bleach your fucking eyeballs at night if your browser
+                thinks you like dark things;
+              </li>
+              <li>The website is simple and small beacause that bitch is on
+                diet;</li>
+              <li>
+                The motherfucker’s still accessible to every asshole that visits
+                your site;
+              </li>
+              <li>Shit’s still legible and gets your fucking point across.</li>
+            </ul>
+
+          </div>
+
+          <div class="seriously">
+            <h2 class="heading">Seriously, what the fuck else do you want?</h2>
+            <p>
+              You probably build websites and think your shit is special. You
+              think your 13 megabyte parallax-ative home page is going to get
+              you some fucking Awwward banner you can glue to the top corner of
+              your site. You think your 40-pound jQuery file and 83 polyfills
+              give IE7 a boner because it finally has box-shadow. Wrong,
+              motherfucker.
+            </p>
+          </div>
+          <div class="sizeMatter">
+            <h2 class="heading">Size Matters</h2>
+            <p>
+              I know your partner says otherwise, but it's true. Bump that body
+              copy to render close to 16px or more. Smaller type works well for
+              print, not the screen.
+            </p>
+            <div class="quotes">
+              <!-- here philoao[hy type image stone ] -->
+              <h2 class="heading">QUOTES</h2>
+              <p>
+                <i>" Good design is as little design as possible." - some German
+                  motherfucker
+                </i>
+              </p>
+            </div>
+          </div>
+          <div class="satire">
+            <h2 class="heading">Yes, this is fucking satire, you fuck</h2>
+            <p>
+              I'm not actually saying your shitty site should look like this.
+              What I'm saying is that all the problems we have with websites are
+              ones we create ourselves. Websites aren't broken by default, they
+              are functional, high-performing, and accessible. You break them.
+              You son-of-a-bitch.
+            </p>
+          </div>
+
+          <div class="inspiration">
+            <h2 class="heading">Inspiration</h2>
+            <p>
+              Inspiration for the minimal and copious swearing website was taken
+              from <a target="_blank" href="https://motherfuckingwebsite.com/">motherfuckingwebsite(ThisIsTheOriginal)</a>
+              . Pay a visit to those fucking websites.
+              Here are some fucking website list :
+              <ul>
+                <li><a target="_blank"
+                    href="https://perfectmotherfuckingwebsite.com/">perfectmotherfuckingwebsite</a></li>
+                <li><a target="_blank"
+                    href="https://evenbettermotherfucking.website/">evenbettermotherfucking</a></li>
+                <li><a target="_blank"
+                    href="https://bestmotherfucking.website/">bestmotherfucking</a></li>
+                <li><a target="_blank"
+                    href="https://thebestmotherfuckingwebsite.co/">thebestmotherfuckingwebsite.co</a>
+                </li>
+                <li><a target="_blank"
+                    href="https://justinjackson.ca/words.html">justinjackson.ca/words</a></li>
+              </ul>
+
+
+            </p>
+          </div>
+          <div class="self">
+            <h2 class="heading">About</h2>
+            <p>
+              I am a new web developer learning and exploring the world of web.I
+              came to know about the <a
+                href="https://motherfuckingwebsite.com/">website</a> and think
+              of make my own version of this.Here i tried some of things i have
+              learned.I know this site isn't as fast or compact like the rest of
+              the sites but so far i have made my own version of it.you can find
+              me on <a target="_blank" href="https://github.com/raeef1001">github</a>
+              and <a
+                target="_blank" href="https://twitter.com/Aryian362">twitter</a>.
+            </p>
+            <!-- this color hax part is created using https://www.colorhexa.com/330223 -->
+            <div class="scheme gradient">
+              <ul id="twitter">
+                <li style="background-color:#0e0009;">T</li><li
+                  style="background-color:#200116;">w</li><li
+                  style="background-color:#330223;">i</li><li
+                  style="background-color:#460230;">t</li><li
+                  style="background-color:#59033d;">t</li><li
+                  style="background-color:#6c0449;">e</li><li
+                  style="background-color:#7f0456;">r</li><li
+                  style="background-color:#920563;">:</li><li
+                  style="background-color:#a50670;">r</li><li
+                  style="background-color:#b8067d;">a</li><li
+                  style="background-color:#cb078a;">e</li><li
+                  style="background-color:#de0897;">e</li><li
+                  style="background-color:#f108a3;">f</li> </ul>
+
+            </div>
+          </div>
+          <div class="licence">
+            <h2 class="heading">MIT License</h2>
+            <div class="licence typed" id="typed">
+              <p>Copyright (c) 2023 raeef</p>
+
+            </div>
+          </div>
+        </div>
+        <div class="cubeContainer">
+          <div class="cube"></div>
+        </div>
+
+      </div>
+
+    </div>
+
+    <!-- rotating cube animation  -->
+
+    <script>
+    document.getElementById("twitter").onclick = function () {
+      location.href = "https://twitter.com/Aryian362";
+  };
+ 
+   
+    
+      
+   
+  
+   whiteMode =true
+  document.getElementById('buttonRed').onclick=function(){
+    console.log(34223)
+    if(whiteMode){
+      document.getElementsByTagName("body")[0].style.backgroundColor =
+      "#0d1117";
+      document.getElementById('mainBox').style.backgroundColor =
+      "#0d1117";
+    document.getElementById('mainBox').style.color = "#c9c0c0";
+    document.getElementById('buttonRed').style.backgroundColor =
+    "#f2f2f2";
+    whiteMode=false;
+    }
+    else{
+      document.getElementsByTagName("body")[0].style.backgroundColor =
+      "#f2f2f2";
+      document.getElementById('mainBox').style.backgroundColor =
+      "#f2f2f2";
+      document.getElementById('buttonRed').style.backgroundColor =
+    "#0d1117";
+    document.getElementById('mainBox').style.color = "#454545";
+    whiteMode=true;
+    }
+  }
+ 
+    
+    
+  let textLength = 0;
+let text = "Permission is hereby granted, free of charge, to any person obtaining a copy of this software and associated documentation files (the Software), to deal in the Software without restriction, including  without limitation the rights to use, copy, modify, merge, publish, distribute, sublicense, and/or sell copies of the Software, and to permit persons to whom the Software is furnished to do so, subject to the following conditions: The above copyright notice and this permission notice shall be included in all copies or substantial portions of the Software. HE SOFTWARE IS PROVIDED AS IS, WITHOUT WARRANTY OF ANY KIND, EXPRESS ORIMPLIED, INCLUDING BUT NOT LIMITED TO THE WARRANTIES OF MERCHANTABILITY,FITNESS FOR A PARTICULAR PURPOSE AND NONINFRINGEMENT. IN NO EVENT SHALL THE AUTHORS OR COPYRIGHT HOLDERS BE LIABLE FOR ANY CLAIM, DAMAGES OR OTHER LIABILITY, WHETHER IN AN ACTION OF CONTRACT, TORT OR OTHERWISE, ARISING FROM,OUT OF OR IN CONNECTION WITH THE SOFTWARE OR THE USE OR OTHER DEALINGS IN THE http://unlicense.org"
+
+function type() {
+    let textChar = text.charAt(textLength++);
+    let paragraph = document.getElementById("typed");
+    let charElement = document.createTextNode(textChar);
+    paragraph.appendChild(charElement);
+    if(textLength < text.length+1) {
+        setTimeout('type()', 50);
+    } else {
+        text = '';
+    }
+}
+
+document.addEventListener("DOMContentLoaded", function() {
+    type();
+});
+   
+   
+  </script>
+  </body>
+
+</html>
